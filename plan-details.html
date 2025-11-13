@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Plan - Comfort Bite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="plan-details-page"> <!-- Class for targeting with JS -->
+
+    <!-- ============================================= -->
+    <!-- SIMPLE HEADER -->
+    <!-- ============================================= -->
+    <nav class="navbar simple-nav">
+        <div class="container">
+            <a href="index.html" class="logo">Comfort Bite</a>
+            <a href="index.html#pricing" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to All Plans
+            </a>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- PLAN DETAILS & PAYMENT SECTION -->
+    <!-- ============================================= -->
+    <main class="plan-details-container">
+        <div class="plan-details-grid">
+            
+            <!-- Left Column: Plan Details -->
+            <div class="plan-details-content">
+                <span class="tag">You are enrolling in</span>
+                <h1 id="plan-title">Loading Plan...</h1>
+                <p id="plan-description">Loading details...</p>
+                
+                <h3>What's Included:</h3>
+                <ul id="plan-features" class="plan-features-list">
+                    <li><i class="fas fa-check"></i> Loading feature...</li>
+                </ul>
+
+                <div class="plan-details-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>You can pause, cancel, or change your plan anytime. Your subscription will auto-renew unless cancelled.</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Payment & Summary -->
+            <div class="plan-payment-box">
+                <h4>Order Summary</h4>
+                <div class="summary-item">
+                    <span id="summary-plan-name">Loading...</span>
+                    <strong id="summary-plan-price">₹0</strong>
+                </div>
+                <div class="summary-item">
+                    <span>First-time setup fee</span>
+                    <strong>FREE</strong>
+                </div>
+                <div class="summary-total">
+                    <span>Total Due Today</span>
+                    <strong id="summary-total-price">₹0</strong>
+                </div>
+
+                <hr class="payment-divider">
+
+                <h4>Pay with Card</h4>
+                <form id="payment-form" class="payment-form">
+                    <div class="form-group">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" placeholder="Priya Sharma" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
+                    </div>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="card-expiry">Expiry (MM/YY)</label>
+                            <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-cvc">CVC</label>
+                            <input type="text" id="card-cvc" placeholder="123" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <i class="fas fa-lock"></i> Enroll & Pay
+                    </button>
+                </form>
+
+                <!-- Payment Success Modal -->
+                <div class="success-modal" id="payment-success-modal">
+                    <div class="success-modal-content">
+                        <div class="success-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Payment Successful!</h3>
+                        <p>Welcome to Comfort Bite. Redirecting...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

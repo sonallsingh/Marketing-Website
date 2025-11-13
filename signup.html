@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Comfort Bite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="auth-page-bg">
+
+    <main class="auth-container">
+        <div class="auth-box">
+            
+            <div class="auth-header">
+                <a href="index.html" class="logo">Comfort Bite</a>
+                <p>In partnership with <strong>Samara Company</strong></p>
+            </div>
+
+            <div class="auth-role-select">
+                <label>I am a:</label>
+                <div class="role-options-container">
+                    <div class="role-option active" data-role="customer">
+                        <h4>Customer</h4>
+                        <p>Looking for homely meals</p>
+                    </div>
+                    <div class="role-option" data-role="chef">
+                        <h4>Chef</h4>
+                        <p>Ready to cook meals</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-tabs">
+                <a href="login.html" class="auth-tab-link">Login</a>
+                <a href="signup.html" class="auth-tab-link active">Sign Up</a>
+            </div>
+
+            <div class="auth-form-content">
+                <form id="signup-form">
+                    <h2>Create Your Account</h2>
+                    <p>Get started with fresh, homely meals today.</p>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Priya Sharma" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                </form>
+            </div>
+
+            <!-- =========== NEW SUCCESS MODAL =========== -->
+            <div class="success-modal" id="signup-success-modal">
+                <div class="success-modal-content">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>Account Created Successfully!</h3>
+                    <p>Redirecting you to the homepage...</p>
+                </div>
+            </div>
+            <!-- ========================================= -->
+
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
